@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery - Ainin Sofiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <div class="nav-icon">
+    <img src="icon.png" alt="Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="galleries.html">Gallery</a></li>
+    <li><a href="schools.html">Education</a></li>
+    <li><a href="funfact.html">Funfact</a></li>
+  </ul>
+  <div id="clock" style="font-weight:bold; font-size:16px; color:#6c63ff;"></div>
+</nav>
+
+<section id="gallery" class="gallery-section">
+  <h2 class="gallery-title">Gallery Photo</h2>
+  <div class="gallery-container-wrapper">
+    <div class="gallery-container">
+      <div class="card">
+        <img src="gambar1.jpg" alt="Family Raya 2025 photo" />
+        <div class="card-text">
+          <span>April 1, 2025</span>
+          <h3>Serom 2</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gambar4.jpg" alt="SMK friends outing" />
+        <div class="card-text">
+          <span>September 29, 2024</span>
+          <h3>Hutan Bandar MBJB</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gambar6.jpg" alt="Just a duck chilling on a rock" />
+        <div class="card-text">
+          <span>June 21, 2024</span>
+          <h3>Masjid As Syakirin</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gambar5.jpg" alt="KOR Al-Quran program at the mosque" />
+        <div class="card-text">
+          <span>July 24, 2024</span>
+          <h3>Emerald Lake</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gambar3.jpg" alt="Kitten striking a pose" />
+        <div class="card-text">
+          <span>February 2, 2025</span>
+          <h3>Gelang Patah</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gambar7.jpg" alt="My cat sleeps" />
+        <div class="card-text">
+          <span>May 14, 2024</span>
+          <h3>Gelang Patah</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="view-all-btn" onclick="window.location.href='gallery.html'">View All Photos</button>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script> 
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); // Run immediately
+</script>
+
+</body>
+</html>

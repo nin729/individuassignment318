@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<h2 class="gallery-title">Photo Gallery</h2>
+
+<div class="gallery-grid">
+  <div class="gallery-item">
+    <img src="gambar1.jpg" alt="Family Raya 2025 photo" onclick="openModal(this)">
+    <div class="card-text">
+        <span>April 1, 2025</span>
+        <h3>Serom 2</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar4.jpg" alt="SMK friends outing" onclick="openModal(this)">
+    <div class="card-text">
+        <span>September 29, 2024</span>
+        <h3>Hutan Bandar MBJB</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar5.jpg" alt="Just a duck chilling on a rock" onclick="openModal(this)">
+    <div class="card-text">
+        <span>July 24, 2024</span>
+        <h3>Emerald Lake</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar6.jpg" alt="KOR Al-Quran program at the mosque" onclick="openModal(this)">
+    <div class="card-text">
+        <span>June 21, 2024</span>
+        <h3>Masjid As Syakirin</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar3.jpg" alt="Kitten striking a pose" onclick="openModal(this)">
+    <div class="card-text">
+        <span>February 2, 2025</span>
+        <h3>Gelang Patah</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar7.jpg" alt="My cat sleeps" onclick="openModal(this)">
+    <div class="card-text">
+        <span>May 14, 2024</span>
+        <h3>Gelang Patah</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar12.jpg" alt="Camping adventure with Kompeni Alpha " onclick="openModal(this)">
+    <div class="card-text">
+        <span>July 9, 2023</span>
+        <h3>Berhulu Camp</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar13.jpg" alt="Chilling on the rooftop with coffee" onclick="openModal(this)">
+    <div class="card-text">
+        <span>June 29, 2023</span>
+        <h3>Iskandar Puteri</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar14.jpg" alt="Handball MSSJ 2016" onclick="openModal(this)">
+    <div class="card-text">
+         <span>2016</span>
+         <h3>KRAMSAU</h3>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img src="gambar15.jpg" alt="My cat in the cage" onclick="openModal(this)">
+    <div class="card-text">
+        <span>May 18, 2025</span>
+        <h3>Gelang Patah</h3>
+    </div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
+<a href="galleries.html" class="back-btn">Back</a>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script>
+function openModal(imgElement) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("imgModal");
+
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

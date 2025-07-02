@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Ainin Sofiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-icon">
+      <img src="icon.png" alt="Icon">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="galleries.html">Gallery</a></li>
+      <li><a href="schools.html">Education</a></li>
+      <li><a href="funfact.html">Funfact</a></li>
+    </ul>
+    <div id="clock" style="font-weight:bold; font-size:16px; color:#6c63ff;"></div>
+  </nav>
+
+<section class="about-section">
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Ainin Sofiya</h1>
+      <p>A final-year diploma student in Information Management. I’m someone who loves learning new things and trying out different experiences. I also enjoy working with people, staying organized, and giving my best in everything I do. I'm always open to new opportunities that can help me grow and improve myself. Still figuring things out, but definitely excited for what’s ahead.</p>
+    </div>
+    <img src="Ainin.jpg" alt="Profile picture Ainin" width="400" height="300">
+  </section>
+
+  <div class="social-icons">
+    <a href="https://youtube.com/@nuraininsofiyazaharuddin?si=wHSYXGav6X7OqTMN" class="fa fa-youtube" target="_blank"></a>
+    <a href="https://www.instagram.com/aininyay?igsh=MWVyeGpncmw4cDc5dQ==" class="fa fa-instagram" target="_blank"></a>
+    <a href="https://pin.it/35NaW2mIZ" class="fa fa-pinterest" target="_blank"></a>
+    <a href="https://www.snapchat.com/add/ainininon?share_id=fdKWDoR3dfs&locale=en-MY" class="fa fa-snapchat-ghost " target="_blank"></a>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script> 
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); 
+</script>
+
+<script>
+  window.onload = function () {
+    alert("Welcome to my space!👋");
+  };
+</script>
+
+</body>
+</html>

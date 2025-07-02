@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media - Ainin Sofiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <div class="nav-icon">
+    <img src="icon.png" alt="Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="galleries.html">Gallery</a></li>
+    <li><a href="schools.html">Education</a></li>
+    <li><a href="funfact.html">Funfact</a></li>
+  </ul>
+  <div id="clock" style="font-weight:bold; font-size:16px; color:#6c63ff;"></div>
+</nav>
+
+<section id="media" style="text-align: center; margin: 40px 0;">
+  <h2>Favourite Audio & Video Clip</h2>
+  <audio controls style="margin: 10px 0;">
+    <source src="Gabriela-KATSEYE.mp3" alt="Gabriela by KATSEYE" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br>
+  <video controls autoplay muted loop style="height: 300px; object-fit: cover; margin-right: 10px;">
+    <source src="video1.mp4" alt="SMK friends outing" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls autoplay muted loop style="height: 300px; object-fit: cover; margin-right: 10px;">
+    <source src="video3.mp4" alt="Kittens" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls autoplay muted loop style="height: 300px; object-fit: cover;">
+    <source src="video2.mp4" alt="Mini Perkom Kompeni Alpha" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script> 
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); 
+</script>
+
+</body>
+</html>

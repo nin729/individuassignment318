@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Ainin Sofiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <div class="nav-icon">
+    <img src="icon.png" alt="Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="galleries.html">Gallery</a></li>
+    <li><a href="schools.html">Education</a></li>
+    <li><a href="funfact.html">Funfact</a></li>
+  </ul>
+  <div id="clock" style="font-weight:bold; font-size:16px; color:#6c63ff;"></div>
+</nav>
+
+<div class="container">
+  <div class="left-panel">
+    <h1>It's me,<br><u>Ninin</u></h1>
+    <div style="text-align:justify;">
+      <p>Call me Nin. I am <mark>the third of four siblings</mark>.</p>
+    </div>
+    <div class="section">
+      <h2>About</h2>
+      <p><strong>NUR AININ SOFIYA</strong></p>
+      <p>🎂 04.04.2004</p>
+      <p>📞 011-6236 8410</p>
+      <p>📧 <a href="mailto:aininzaharuddin0404@gmail.com">aininzaharuddin0404@gmail.com</a></p>
+      <p>📍 Gelang Patah, Johor, Malaysia</p>
+    </div>
+  </div>
+
+  <div class="middle-panel">
+    <h2>Education</h2>
+    <p><strong>2023 - Present</strong><br/>Diploma in Information Management<br/>Universiti Teknologi Mara (UiTM) <br/> CGPA: 3.41</p>
+    <p><strong>2017 - 2021</strong><br/>Sijil Pelajaran Malaysia (SPM)<br/>SMK Kompleks Sultan Abu Bakar <br/> 1A 2A- 2B+ 2B 1D</p>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <p><strong>10 February - 4 April 2025</strong><br/>PTP Sdn. Bhd. - Intern</p>
+      <p><strong>Ogos - October 2022</strong><br/>SMK Kompleks Sultan Abu Bakar - School Cooperative Assistant</p>
+      <p><strong>July - Ogos 2022</strong><br/>SMK Kompleks Sultan Abu Bakar - Canteen Assistant</p>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <h2>Skills</h2>
+    <ul>
+      <li>Microsoft Office</li>
+      <li>Teamwork</li>
+      <li>Time management</li>
+      <li>Canva</li>
+      <li>Basic knowledge of computer</li>
+    </ul>
+
+    <h2>Interests</h2>
+    <ol class="interest-list">
+      <li>Music</li>
+      <li>Novels</li>
+      <li>K-dramas</li>
+      <li>Movies</li>
+      <li>Cats</li>
+    </ol>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script> 
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Funfact - Ainin Sofiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <div class="nav-icon">
+    <img src="icon.png" alt="Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="galleries.html">Gallery</a></li>
+    <li><a href="schools.html">Education</a></li>
+    <li><a href="funfact.html">Funfact</a></li>
+  </ul>
+  <div id="clock" style="font-weight:bold; font-size:16px; color:#6c63ff;"></div>
+</nav>
+
+<section id="funfact" style="text-align: center; margin: 40px 0;">
+  <h2>Funfact about Information Management</h2>
+  <iframe src="https://theecmconsultant.com/what-is-information-management/" height="300px" width="60%" style="border:2px solid rgb(0, 13, 65); border-radius: 10px;"></iframe>
+  <p><a href="https://theecmconsultant.com/what-is-information-management/" target="_blank">Visit theecmconsultant.com</a></p>
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3U1bWY2b3ExamE3MXQzNHA5cTA5ZGwyZTJteGNsdG1hd2Z2YXdnbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="Computer man" style="width:80px;height:80px;">
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script> 
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+</body>
+</html>

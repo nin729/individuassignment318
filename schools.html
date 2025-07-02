@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My School - Ainin Sofiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <div class="nav-icon">
+    <img src="icon.png" alt="Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="galleries.html">Gallery</a></li>
+    <li><a href="schools.html">Education</a></li>
+    <li><a href="funfact.html">Funfact</a></li>
+  </ul>
+  <div id="clock" style="font-weight:bold; font-size:16px; color:#6c63ff;"></div>
+</nav>
+
+<section id="schools">
+  <h2 class="section-title">Education</h2>
+  <p class="section-subtitle">Click each of the pictures to see more:</p>
+
+  <table class="school-table">
+    <tr>
+      
+      <td class="school-box">
+        <div class="school-title">Tadika Pasti Ar-Rahman 1</div>
+        <img src="gambar8.jpg"
+             usemap="#map1" alt="Tadika Pasti Ar-Rahman 1" class="school-img">
+        <map name="map1">
+          <area shape="rect" coords="36,83,493,360" alt="Me & friends"
+                href="gambar8.1.jpg">
+        </map>
+      </td>
+
+      <td class="school-box">
+        <div class="school-title">SK Kompleks Sultan Abu Bakar</div>
+        <img src="gambar9.jpg"
+             usemap="#map2" alt="SK Kompleks Sultan Abu Bakar" class="school-img">
+        <map name="map2">
+          <area shape="rect" coords="52,72,471,355" alt="Me & friends"
+                href="gambar9.1.jpg">
+        </map>
+      </td>
+
+      <td class="school-box">
+        <div class="school-title">SMK Kompleks Sultan Abu Bakar</div>
+        <img src="gambar10.jpg"
+             usemap="#map3" alt="SMK Kompleks Sultan Abu Bakar" class="school-img">
+        <map name="map3">
+          <area shape="rect" coords="48,60,432,474" alt="Me & friends"
+                href="gambar10.1.jpg">
+        </map>
+      </td>
+
+      <td class="school-box">
+        <div class="school-title">UiTM Cawangan Segamat</div>
+        <img src="uitm.jpg"
+             usemap="#map4" alt="UiTM Cawangan Segamat" class="school-img">
+        <map name="map4">
+          <area shape="rect" coords="212,105,719,517" alt="Me & friends"
+                href="gambar17.jpg">
+        </map>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Ainin Sofiya. All rights reserved.
+</p>
+  </div>
+</footer>
+
+<script> 
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); 
+</script>
+
+</body>
+</html>
